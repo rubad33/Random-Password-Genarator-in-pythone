@@ -1,0 +1,15 @@
+import random
+import string
+
+
+password_length =int( input("What is your Random Password Length :"))
+
+# password_length = 10
+CharValues = string.ascii_letters + string.digits + string.punctuation
+
+password = ""
+
+for i in range(password_length):
+   password += random.choice(CharValues)
+
+print("Your Random Password is : ",password)
